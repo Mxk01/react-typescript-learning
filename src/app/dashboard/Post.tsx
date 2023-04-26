@@ -15,8 +15,8 @@ function Post({id,title,rating}:PostProps) {
     let someFunc = (a:string)=>{
         setThatTitle(a)
         }
-    let doSomething = (e:React.InputHTMLAttributes<HTMLInputElement>) => {
-      console.log(e.formTarget?.valueOf)
+    let doSomething = (e:React.ChangeEvent<HTMLInputElement>) => {
+      console.log(e.target?.value)
     }
   return (
     <div>
